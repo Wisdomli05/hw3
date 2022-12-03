@@ -1,104 +1,152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
-<style>
-    .container {
-  position: relative;
-}
+    <meta charset="utf-8" />
+    <style>
+        body{
+            text-align: center;
+        }
+        .header {
+            position: relative;
+        }
 
-.center {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-}
+        .center {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+        }
 
-img { 
-  width: 100%;
-  height: auto;
-  opacity: 0.3;
-}
+        img {
+            width: 100%;
+            height: 10%;
+            opacity: 0.8;
+        }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-li {
-  float: left;
-}
+        li {
+            float: right;
+        }
 
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
 
-li.dropdown {
-  display: inline-block;
-}
+        li.dropdown {
+            display: inline-block;
+        }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-div.fixed {
-  position: fixed;
-  left: 0;
-  height: 300px;
-  border: 10px solid #73AD21;
-}
-</style>
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        .box {
+            position: fixed;
+            left: 0px;
+            top:0%
+        }
+
+        span {
+            display: block;
+            font-size: 50px;
+        }
+        a{
+            text-decoration: none
+        }
+    </style>
 </head>
-<body>
 
-<header>
-    <div class="container">
-        <img src="91529822720e0cf3d7ca42c4e413e51fbe096b637ccc.png" alt="W3School" width="800" height="450">
+<body>
+    <div class="header">
+        <img src="91529822720e0cf3d7ca42c4e413e51fbe096b637ccc.png">
         <div class="center">默哀</div>
-      </div>
-    <ul>
-  <li><a href="https://code.visualstudio.com/">主页</a></li>
-  <li><a href=https://www.cnblogs.com/>博客</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">课程</a>
-    <div class="dropdown-content">
-      <a href=https://mooc2-ans.chaoxing.com/mycourse/stu?courseid=229277919&clazzid=65043756&cpi=266051950&enc=3e158257e5134fefcfad4c3bb9d35342&t=1669811409538&pageHeader=0&v=2>Web开发基础</a>
-      <a href=https://mooc2-ans.chaoxing.com/mycourse/stu?courseid=229263646&clazzid=65012408&cpi=266051950&enc=f0af0342c87489dfaabab5e879c60c4e&t=1669811462993&pageHeader=0&v=2>微积分</a>
-      <a href=https://mooc2-ans.chaoxing.com/mycourse/stu?courseid=229192954&clazzid=64857167&cpi=266051950&enc=be6d3afe6ae5f381f74329c2dfd2d5f4&t=1669811584030&pageHeader=0&v=2>C语言程序设计</a>
     </div>
-  </li>
-</ul>
-</header>
-<div class="fixed"></div>
+    </div>
+    <ul>
+        <li><a href="https://code.visualstudio.com/">主页</a></li>
+        <li><a href=https://www.cnblogs.com />博客</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">课程</a>
+            <div class="dropdown-content">
+                <a
+                    href=https://mooc2-ans.chaoxing.com/mycourse/stu?courseid=229277919&clazzid=65043756&cpi=266051950&enc=3e158257e5134fefcfad4c3bb9d35342&t=1669811409538&pageHeader=0&v=2>Web开发基础</a>
+                <a
+                    href=https://mooc2-ans.chaoxing.com/mycourse/stu?courseid=229263646&clazzid=65012408&cpi=266051950&enc=f0af0342c87489dfaabab5e879c60c4e&t=1669811462993&pageHeader=0&v=2>微积分</a>
+                <a
+                    href=https://mooc2-ans.chaoxing.com/mycourse/stu?courseid=229192954&clazzid=64857167&cpi=266051950&enc=be6d3afe6ae5f381f74329c2dfd2d5f4&t=1669811584030&pageHeader=0&v=2>C语言程序设计</a>
+            </div>
+        </li>
+    </ul>
+    <p> 江泽民是全党全军全国各族人民公认的享有崇高威望的卓越领导人，伟大的马克思主义者，伟大的无产阶级革命家、政治家、军事家、外交家，久经考验的共产主义战士，中国特色社会主义伟大事业的杰出领导者，党的第三代中央领导集体的核心，“三个代表”重要思想的主要创立者。
+
+        江泽民的一生，是光辉的战斗的一生。在70多年的革命生涯中，他对共产主义理想坚贞不渝，对党和人民无限忠诚，矢志不移为党和人民事业而奋斗。
+
+    <p>党的十三届四中全会以后，在国内外形势十分复杂、世界社会主义出现严重曲折的严峻考验面前，江泽民带领党的中央领导集体，紧紧依靠全党全军全国各族人民，捍卫了中国特色社会主义伟大事业，成功把中国特色社会主义推向二十一世纪，建立了永不磨灭的功勋，赢得了全党全军全国各族人民衷心爱戴和国际社会广泛赞誉。
+    </p>
+
+
+
+    <p>中共十三届四中全会以后，江泽民在领导建设中国特色社会主义的实践中，团结带领全党全国各族人民，坚持党的基本理论、基本路线、基本纲领，加深了对什么是社会主义、怎样建设社会主义和建设什么样的党、怎样建设党的认识，形成了“三个代表”重要思想，丰富和发展了中国特色社会主义理论。“三个代表”重要思想，既坚持了马克思主义基本原理，又反映了世界和中国发展变化对党和国家工作的新要求，以新的思想、观点、论断，继承、丰富、发展了马克思列宁主义、毛泽东思想、邓小平理论。
+
+        江泽民对中国特色社会主义发展道路问题作出深刻思考，提出必须把发展作为党执政兴国的第一要务，不断开创现代化建设新局面。他提出，全党工作的大局是抓住机遇、深化改革、扩大开放、促进发展、保持稳定，这是必须长期坚持的方针。要全面把握党的基本路线的全部内容，把经济建设这个中心同四项基本原则、改革开放这两个基本点统一于建设中国特色社会主义的伟大实践，贯穿于现代化建设整个过程。他指出，发展是硬道理，这是我们必须始终坚持的一个战略思想，财大才能气粗，落后就要挨打。只要我们的经济实力、国防实力、民族凝聚力不断增强，就可以“任凭风浪起，稳坐钓鱼船”。他深刻分析了党和国家面临的新形势，敏锐指出，综观全局，21世纪头20年，对我国来说，是一个必须紧紧抓住并且可以大有作为的重要战略机遇期，一定要有主动精神和忧患意识，抓住机遇而不可丧失机遇，开拓进取而不可因循守旧，集中全国人民智慧和力量，聚精会神搞建设，一心一意谋发展，不断促进社会主义物质文明、政治文明、精神文明协调发展。建设中国特色社会主义应该是我国经济、政治、文化全面发展的进程，是我国社会主义物质文明、政治文明、精神文明全面建设的进程。他提出，我们建设中国特色社会主义各项事业，我们进行的一切工作，既要着眼于人民现实的物质文化生活需要，同时又要着眼于促进人民素质的提高，也就是要努力促进人的全面发展，推进人的全面发展同推进经济、政治、文化发展和改善人民物质文化生活是互为前提和基础的。他强调，要正确认识和处理改革发展稳定的关系，改革是动力，发展是目标，稳定是前提，要把改革的力度、发展的速度和社会可承受的程度统一起来，把不断改善人民生活作为处理改革发展稳定关系的重要结合点，在社会稳定中推进改革发展，通过改革发展促进社会稳定。
+    </p>
+    <div class="box">
+        <div class="a">
+            <a href=http://news.enorth.com.cn/system/2002/06/22/000357089.shtml><span>生平简介</span></a>
+            <a href=https://www.chinacourt.org/article/detail/2022/12/id/7048049.shtml><span>生平相片</span></a>
+            <a href=https://wm.jschina.com.cn/wmwyw/202212/t20221203_7770843.shtml><span>光辉事迹</span></a>
+    </div>
+    </div>
+    <div class="footer">
+        <p>Copyright (c) 2022-2022 Jiangxi University Of Finance and Economics. All Rights Reserved.</p>
+    </div>
 </body>
+
 </html>
